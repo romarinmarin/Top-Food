@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { ScanPage } from './scan';
+import { NgModule } from "@angular/core";
+import { IonicPageModule } from "ionic-angular";
+import { ScanPage } from "./scan";
+import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 
 @NgModule({
-  declarations: [
-    ScanPage,
-  ],
-  imports: [
-    IonicPageModule.forChild(ScanPage),
-  ],
+  declarations: [ScanPage],
+  imports: [IonicPageModule.forChild(ScanPage)]
 })
 export class ScanPageModule {}
