@@ -5,6 +5,7 @@ import { BarcodeScanner } from "@ionic-native/barcode-scanner";
 
 @NgModule({
   declarations: [ScanPage],
-  imports: [IonicPageModule.forChild(ScanPage)]
+  imports: [IonicPageModule.forChild(ScanPage)],
+  providers: [BarcodeScanner]
 })
 export class ScanPageModule {}
